@@ -38,6 +38,12 @@ c1 = Customer.create!(name: "Eurípides", lastname: "Neanderthal",
                   phone:"+56932347282",
                   password:"123123123",
                   address:"El Pozo 123, Ñuñoa, Santiago, Chile")
+# following customer isn't valid {email taken}
+# c = Customer.new(name: "rai", lastname: "diaz", email:"neanderthal@hotmail.com", phone:"+569323asd47282", password:"123123asd123", address:"Easdl Pozo 123, Ñuñoa, Santiago, Chile")
+# following customer isn't valid {email is not an email}
+#c = Customer.new(name: "radai", lastname: "diaz", email:"algohotmail.com", phone:"+569323asd47282", password:"123123asd123", address:"Easdl Pozo 123, Ñuñoa, Santiago, Chile")
+
+
 
 t1 = Ticket.create(ticket_type: tt1)
 t2 = Ticket.create(ticket_type: tt2)
